@@ -1,0 +1,15 @@
+name: task2lab3
+
+on:
+  push:
+    branches:
+      - main
+jobs:
+  joblab3:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        
+      - name: print hello, world!
+        run: echo "Hello, World!"
